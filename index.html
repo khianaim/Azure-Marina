@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Azure Isles Charter Yacht Show is a premier fictional event showcasing luxury yachts, marine innovation, and tropical elegance in a captivating seaside experience.">
+    <title> Azure Isles Yachting & Marine Association</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader">
+    <div id="gooey-text-wrapper" class="noto-black">
+      <span id="text1"></span>
+      <span id="text2"></span>
+  
+      <svg class="visually-hidden">
+        <filter id="gooey-filter">
+          <feColorMatrix in="SourceGraphic" type="matrix"
+            values="1 0 0 0 0  
+                    0 1 0 0 0  
+                    0 0 1 0 0  
+                    0 0 0 255 -140" />
+        </filter>
+      </svg>
+      
+      <!-- Button should be inside gooey-text-wrapper or loader -->
+      <button id="enterBtn" class="hidden">See Upcoming Events</button>
+    </div>
+  </div>
+  
+
+<div id="main-content">
+  <div id="main">
+  <!-- <nav class="navbar"> -->
+    <!-- <div class="logo">
+      <img src="public/images/logo.png" alt="Logo" class="logo-img">
+    </div>
+  </nav> -->
+
+ <!-- Banner HTML Structure -->
+    <div id="banner" class="banner">
+       <div class="banner-message">
+        <div class="marquee">
+          <div class="marquee-content">
+            <span class="noto-thin">Thank you to all our sponsors:</span>
+            <img src="public/images/sponsors/beer.png" alt="Heineken Beer" />
+            <img src="public/images/sponsors/water.png" alt="Oasis Water" />
+            <img src="public/images/sponsors/rum.png" alt="English Harbour Rum" />
+            <img src="public/images/sponsors/harris.png" alt="Harris Paint Plus" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <video id="video1" src="public/videos/9731c87a-8d0a-406d-bfce-f816f9c2c951.webm" autoplay loop muted></video>
+        <video id="video2" src="public/videos/9731c87a-8d0a-406d-bfce-f816f9c2c951.webm" autoplay loop muted></video>
+
+        <div id="minititle" class="noto-regular">Catch the breeze this year at </div>
+        <div class="animated-text-container">
+        <h1 class="animated-gradient noto-black">
+          Azure Isles
+          <br/> Charter Yacht Show
+        </h1>
+        <div id="undertitle" class="noto-regular"></div>
+        </div>
+       
+    <!-- Audios for page transitions -->
+        <audio id="mainAudio" loop>
+          <source src="public/audios/mainAudio.mp3" type="audio/mp3" />
+        </audio>
+        
+        <audio id="revealAudio" loop>
+          <source src="public//audios/revealAudio.mp3" type="audio/mp3" />
+        </audio>
+        
+
+        <div id="container">
+          
+          <div id="dragme">
+            <div class="cir"></div>
+            <i class="ri-arrow-right-line"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700">
+              <defs>
+                <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#F6A5A1" />
+                  <stop offset="100%" stop-color="#FFB64D" />
+                </linearGradient>
+              
+                <style>
+                  .cls-1, .cls-3 {
+                    fill: none;
+                  }
+              
+                  .cls-1 {
+                    stroke: url(#gradientStroke);
+                    stroke-linecap: round;
+                    stroke-width: 20px;
+                    stroke-dasharray: 1081;
+                  }
+              
+                  .cls-2 {
+                    stroke: none;
+                  }
+                </style>
+              </defs>              
+                <g id="Ellipse_1" data-name="Ellipse 1" class="cls-1">
+                    <circle class="cls-2" cx="350" cy="350" r="350"/>
+                    <circle class="cls-3" cx="350" cy="350" r="342.5"/>
+                </g>
+            </svg>
+        </div>
+        
+        <!-- Inserted text here -->
+        <div class="text-between noto-regular">
+         More details
+        </div>
+        
+        <div class="end-reach">
+          <img src="public/images/yacht.png" alt="Yacht Icon" class="on-cir">
+        </div>
+        <div class="end"></div>
+          </div>
+    </div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/Draggable.min.js" integrity="sha512-o8v90Ete+a3felDNIvgHfQQmaqdx9s1T3nyK4Iy//Zn3Td7vpDRM5y4qlagfZ9qDPvvAA3CN3Wly0a2rEI078Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
