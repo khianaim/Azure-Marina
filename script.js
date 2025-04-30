@@ -288,7 +288,7 @@ const originalTitle = {
 const newTitle = {
   minititle: "Relish in luxury at",
   main: "Parker Dockyard <br/> on 23rd November, 2025",
-  undertitle:"For more: azureislesmarina@azisyachts.com"
+  undertitle:""
 };
 
 let textChanged = false;
